@@ -1,0 +1,20 @@
+{
+    "name": "andrewshell/stryv",
+    "authors": [
+        {
+            "name": "Andrew Shell",
+            "email": "andrew@andrewshell.org"
+        }
+    ],
+    "require": {
+        "meyfa/php-svg": "dev-master"
+    },
+    "require-dev": {
+        "pds/skeleton": "^1.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Stryv\\": "src/"
+        }
+    }
+}
