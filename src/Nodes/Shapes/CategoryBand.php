@@ -31,6 +31,8 @@ class CategoryBand extends SVGPath
             )
         ) . ' ';
 
+        $ir = $r * .88;
+
         // Side Line
         $d .= 'L ';
         $d .= implode(
@@ -39,19 +41,19 @@ class CategoryBand extends SVGPath
                 $cx,
                 $cy,
                 $a - ($ai / 2),
-                $r * .88
+                $ir
             )
         ) . ' ';
 
         // Inner Arc
-        $d .= 'A ' . $r . ' ' . $r . ' 0 0 1 ';
+        $d .= 'A ' . $ir . ' ' . $ir . ' 0 0 1 ';
         $d .= implode(
             ' ',
             $this->polarToCartesian(
                 $cx,
                 $cy,
                 $a + ($ai / 2),
-                $r * .88
+                $ir
             )
         ) . ' ';
 
