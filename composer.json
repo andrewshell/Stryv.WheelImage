@@ -7,7 +7,7 @@
         }
     ],
     "require": {
-        "meyfa/php-svg": "dev-master"
+        "meyfa/php-svg": "^0.6.1"
     },
     "require-dev": {
         "pds/skeleton": "^1.0.0"
